@@ -5,32 +5,16 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.PhoneController">
     <children>
         <TextField fx:id="txtFullName" layoutX="50.0" layoutY="70.0" prefHeight="86.0" prefWidth="250.0" promptText="Fullname" />
         <TextField fx:id="txtPhone" layoutX="50.0" layoutY="203.0" prefHeight="94.0" prefWidth="250.0" promptText="Phone" />
-        <Button layoutX="186.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleSubmit" prefHeight="27.0" prefWidth="114.0" text="Submit" />
-        <Text fx:id="name1" layoutX="352.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="202.21630859375">
+        <Button layoutX="186.0" layoutY="325.0" mnemonicParsing="false" onAction="#addContact" prefHeight="27.0" prefWidth="114.0" text="Submit" />
+        <Text fx:id="result" layoutX="352.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="202.21630859375">
             <font>
-                <Font size="17.0" />
+                <Font size="20.0" />
             </font>
         </Text>
-        <Text fx:id="phone1" layoutX="352.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="202.21630859375">
-            <font>
-                <Font size="17.0" />
-            </font>
-        </Text>
-        <Text fx:id="name2" layoutX="352.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="202.21630859375">
-            <font>
-                <Font size="17.0" />
-            </font>
-        </Text>
-        <Text fx:id="phone2" layoutX="352.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="202.21630859375">
-            <font>
-                <Font size="17.0" />
-            </font>
-        </Text>
-        <Text fx:id="noticeFullName" fill="#d30d0d" layoutX="50.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
-        <Text fx:id="noticePhone" fill="#d30d0d" layoutX="50.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+        <Text fx:id="error" fill="#d30d0d" layoutX="50.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
     </children>
 </Pane>

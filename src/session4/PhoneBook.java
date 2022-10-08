@@ -40,13 +40,14 @@ public class PhoneBook extends Phone{
     }
 
     @Override
-    public void searchPhone(String name) {
+    public PhoneNumber searchPhone(String name) {
         for(int i = 0;i < phoneList.size();i++)
             if(phoneList.get(i).name == name) {
                 System.out.println("Số điện thoại của khách hàng " + phoneList.get(i).name + "là:");
                 for(int j = 0;j<phoneList.get(i).phone.size();j++)
                     System.out.println(phoneList.get(i).phone.get(j) + "\n");
             }
+        return null;
     }
 
     @Override
